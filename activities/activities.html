@@ -10,6 +10,17 @@
     <link rel="icon" href="../images/transparent logo.png">
 </head>
 <body>
+    <div class="mobile-nav">
+        <div class="mobile-logo">
+            <img src="../images/transparent logo.png" alt="Groupe Scolaire Ampère Privé">
+            <i class="bi bi-list" onclick="verify()"></i>
+        </div>
+        <div class="mobile-catego" id="mobile-catego">
+            <a href="index.html" class="span active-span" id="mobile-span">Acceuil</a>
+            <a href="../activities/activities.html" class="span" id="mobile-span2">activitiés</a>
+            <a href="#footer" class="span" id="mobile-span3">contact</a>
+        </div>
+    </div>
     <div class="nav">
         <i class="bi bi-list mobile-menu" onclick="verify()"></i>
         <div class="logo">
@@ -25,7 +36,7 @@
     </div>
     <h1 id="demo" ></h1>
     <div class="fb-container">
-        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fampereprive&tabs=timeline&width=500&height=3310&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="3310" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fampereprive&tabs=timeline&width=500&height=3310&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="2900" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
     </div>
     <footer id="footer">
         <h2>Visitez nos réseaux sociaux et contactez nous</h2>
@@ -65,10 +76,27 @@
         }
         typeWriter()
         function show_menu(){
-        var nav = document.getElementById("mobile-catego");
-        nav.style.opacity = '100';
-        nav.style.transition = '600ms';
-    };
+            var nav = document.getElementById("mobile-catego");
+            nav.style.opacity = '100';
+            nav.style.transition = '600ms';
+            var reds = document.getElementById('mobile-span')
+            reds.style.display = "block";
+            var reds2 = document.getElementById('mobile-span2')
+            reds2.style.display = "block";
+            var reds3 = document.getElementById('mobile-span3')
+            reds3.style.display = "block";
+        }
+        function hide_menu(){
+            var nav = document.getElementById("mobile-catego");
+            nav.style.opacity = '0';
+            nav.style.transition = '600ms';
+            var reds = document.getElementById('mobile-span')
+            reds.style.display = "none";
+            var reds2 = document.getElementById('mobile-span2')
+            reds2.style.display = "none";
+            var reds3 = document.getElementById('mobile-span3')
+            reds3.style.display = "none";
+        }
     function verify() {
         var nav = document.getElementById("mobile-catego");
         var computedStyle = window.getComputedStyle(nav);
@@ -76,7 +104,7 @@
         if (computedStyle.opacity === '0') {
             show_menu();
         } 
-        else {
+        else{
             hide_menu();
         }
     }
