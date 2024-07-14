@@ -32,13 +32,11 @@ function hide_menu(){
     var nav = document.getElementById("mobile-catego");
     nav.style.opacity = '0';
     nav.style.transition = '600ms';
-    nav.style.transform = 'translateY(-50px)';
 };
 function show_menu(){
     var nav = document.getElementById("mobile-catego");
     nav.style.opacity = '100';
     nav.style.transition = '600ms';
-    nav.style.transform = 'translateY(0px)';
 };
 function verify() {
     var nav = document.getElementById("mobile-catego");
@@ -50,20 +48,4 @@ function verify() {
     else {
         hide_menu();
     }
-};
-        // Function to redirect to a specific page for small devices
-function redirectToMobilePage() {
-    // Define the maximum width for small devices (adjust as needed)
-    var maxWidthForRedirect = 1024; // Example: redirect for devices smaller than iPad width
-
-    // Check the device screen width
-    var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-    // Redirect if the screen width is less than the defined maximum width
-    if (screenWidth < maxWidthForRedirect) {
-        window.location.href = "../mobile-landing_page/index.html"; // Replace with your desired URL
-    }
-};
-
-// Call the redirect function when the page loads
-window.onload = redirectToMobilePage;
+}
