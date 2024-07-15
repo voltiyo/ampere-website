@@ -60,7 +60,7 @@
     }
     footer{
         position: absolute;
-        top: 530vh;
+        top: 600vh;
         padding: 150px;
         background: gray;
         left: 0px;
@@ -181,6 +181,7 @@
         display: flex; /* Display navigation links on smaller screens */
         flex-direction: column;
         gap: 10px;
+        opacity: 0;
         padding: 10px 20px;
         background-color: #427AA1;
         position: absolute;
