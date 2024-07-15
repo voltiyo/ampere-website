@@ -125,7 +125,7 @@
         top: 10%;
         text-decoration: underline;
     }
-    footer p{
+    .auto{
         position: absolute;
         bottom: 0%;
     }
@@ -135,7 +135,7 @@
     .mobile-nav{
         display: none;
     }
-    .easter-egg{
+    .dev-text{
         color: transparent;
         position: absolute;
         right: 0%;
@@ -290,7 +290,7 @@
     html{
         scroll-behavior: smooth;
     }
-    .easter-egg{
+    .dev-text{
         color: transparent;
         position: absolute;
         right: 0%;
