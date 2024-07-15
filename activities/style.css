@@ -50,7 +50,13 @@
     }
     .fb-container{
         margin-top: 50px;
-        position: absolute;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    .fb-container iframe{
+        position: relative;
         left: 50%;
         transform: translateX(-50%);
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -59,8 +65,8 @@
         scroll-behavior: smooth;
     }
     footer{
-        position: absolute;
-        top: 600vh;
+        position: relative;
+        top: 20vh;
         padding: 150px;
         background: gray;
         left: 0px;
@@ -198,11 +204,16 @@
     }
     .fb-container{
         margin-top: 50px;
-        position: absolute;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        width: clamp(100px,250px,300x);
+    }
+    .fb-container iframe{
+        position: relative;
         left: 50%;
         transform: translateX(-50%);
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        width: clamp(100px,250px,300x);
     }
     
     .mobile-catego a:hover {
@@ -248,7 +259,7 @@
         padding: 40px 20px;
         margin-top: 20px;
         position: relative;
-        top: 560vh;
+        top: 20vh;
     }
     
     .footer-buttons {
