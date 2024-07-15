@@ -135,6 +135,11 @@
     .mobile-nav{
         display: none;
     }
+    .easter-egg{
+        color: transparent;
+        position: absolute;
+        right: 0%;
+    }
 }
 @media only screen and (max-width:920px){
     body{
@@ -241,7 +246,7 @@
         padding: 40px 20px;
         margin-top: 20px;
         position: relative;
-        top: 500vh;
+        top: 560vh;
     }
     
     .footer-buttons {
@@ -284,5 +289,10 @@
     }
     html{
         scroll-behavior: smooth;
+    }
+    .easter-egg{
+        color: transparent;
+        position: absolute;
+        right: 0%;
     }
 }

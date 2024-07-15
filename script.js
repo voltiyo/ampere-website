@@ -1,3 +1,4 @@
+console.log("built by Aziz Safouane 🐱‍👤");
 function copy_mail(){
     navigator.clipboard.writeText('ampereprive@gmail.com');
     alert('copié dans le presse papier');
