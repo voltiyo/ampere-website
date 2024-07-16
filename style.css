@@ -54,25 +54,37 @@
         height: 100vh;
         margin: 0%;
     }
-    .content img{
-        width: 55%;
-        height: 60%;
+    .img-cont{
         border-radius: 15px;
         margin-left: 20px;
         border: 4px solid green;
+        height: 299px;
+        width: 200%;
+        overflow: hidden;
+    }
+    .content img{
+        transition: 1.5s;
+        height: 299px;
+        width: 720px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .content img:hover{
+        transition: 1.5s;
+        width: 780px;
+        height: 330px;
     }
 
 
     .text h1{
         color: #fff;
         text-align: center;
-
-        
     }
     .text p{
         margin: 15px;
         text-align: center;
-        
     }
     .text{
         flex-direction: column;
@@ -86,10 +98,10 @@
         width: 100%;
     }
     .his h1{
+        color: #000;
         text-align: center;
         padding: 30px;
     }
-
     .students{
         display: flex;
         align-items: center;
